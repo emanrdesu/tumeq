@@ -1,5 +1,4 @@
 <script lang="ts">
-	import { fade } from 'svelte/transition';
 	import IconParticle from './IconParticle.svelte';
 	import { randumb } from './foobar';
 

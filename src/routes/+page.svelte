@@ -3,9 +3,8 @@
 	import IconBomb from '$lib/IconBomb.svelte';
 	import { randelt } from '$lib/foobar';
 	import { browser } from '$app/environment';
-	import { fade, fly, scale, slide } from 'svelte/transition';
+	import { fade, scale, slide } from 'svelte/transition';
 	import Icon from '@iconify/svelte';
-	import { onMount } from 'svelte';
 
 	let q = 0;
 
@@ -70,8 +69,8 @@
 	}
 </script>
 
-<div class="hero min-h-screen bg-base-200">
-	<div class="hero-content text-center">
+<div class="min-h-screen hero bg-base-200">
+	<div class="text-center hero-content">
 		<div class="max-w-md">
 			<div class="flex flex-col justify-center items-center">
 				<span class="text-2xl font-bold countdown">
@@ -80,13 +79,13 @@
 
 				<div>
 					<img src={hedgehog} class="max-w-[300px]" alt="hedgehog" />
-					<h1 class="text-3xl pb-4 font-bold">Tu me quieres?</h1>
+					<h1 class="pb-4 text-3xl font-bold">Tu me quieres?</h1>
 					<button in:fade on:click={tkm} class="btn btn-primary">Sip</button>
 
 					<button
 						in:fade
 						bind:this={unclickable}
-						class="relative left-0 top-0 btn btn-secondary"
+						class="relative top-0 left-0 btn btn-secondary"
 						on:mouseenter={nop}
 						on:click={nop}
 						tabindex="-1"
@@ -105,7 +104,7 @@
 
 		<div transition:slide class="z-10 opacity-80 translate-y-5 toast-middle">
 			<div class="alert alert-info bg-red-950">
-				<span class="text-xl flex gap-2 items-center"
+				<span class="flex gap-2 items-center text-xl"
 					>{randelt(respuestas)}
 					<Icon icon={randelt(emojis)} width={20} color="red" />
 				</span>
