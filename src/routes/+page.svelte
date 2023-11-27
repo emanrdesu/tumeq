@@ -37,6 +37,8 @@
 
 	function tkm() {
 		q++;
+		if (q == 100) q = 0;
+
 		emojiTime = true;
 
 		setTimeout(() => {
