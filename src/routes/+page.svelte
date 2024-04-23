@@ -24,15 +24,17 @@
 
 	const respuestas = [
 		'Te quiero mi amor',
-		'Te necesito sirena',
+		'Te necesito cosita',
 		'Tu eres para mi',
 		'TKM',
 		'Tu y yo para siempre',
+		'Cositaaaaa',
 		'Me encantas',
 		'Besame',
 		'Abrazame',
 		'Acariciame',
-		'Porcupinaaa'
+		'Miamolll',
+		'Amolcitoo'
 	];
 
 	function tkm() {
